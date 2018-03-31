@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block content %}
+                {% for post in posts %}
+                    <div class="post">
+                        <div class="email">
+                            {{ post.emailid }}
+                        </div>
+                        <h1><a href="{% url 'post_detail' pk=post.pk %}">{{ post.name }}</a></h1>
+                        <p>{{ post.reviews|linebreaksbr }}</p>
+                    </div>
+                {% endfor %}
+      {% endblock %}
