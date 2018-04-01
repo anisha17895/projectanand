@@ -1,9 +1,9 @@
 from django import forms
 
-from .models import form
+from .models import formy
 
 class PostForm(forms.ModelForm):
 
     class Meta:
-        model = form
+        model = formy
         fields = ('name', 'emailid', 'reviews')

@@ -1,6 +1,6 @@
 from django.contrib import admin
 
 
-from .models import form
+from .models import formy
 
-admin.site.register(form)
+admin.site.register(formy)
